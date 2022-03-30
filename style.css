@@ -1,0 +1,115 @@
+/* Variables */
+/* Mixin's */
+body {
+  background: #82d2e5;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+#seconds, #tens {
+  font-size: 2em;
+}
+
+#container {
+  width: 630px;
+  margin: 10px auto;
+}
+
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[data-view="card"] {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  width: 100px;
+  height: 140px;
+  border: solid 1px #d3cece;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f3f3f3 22px, #ffffff 22px, #ffffff 24px, transparent 24px, transparent 67px, #ffffff 67px, #ffffff 69px, transparent 69px), linear-gradient(225deg, #f3f3f3 22px, #ffffff 22px, #ffffff 24px, transparent 24px, transparent 67px, #ffffff 67px, #ffffff 69px, transparent 69px) 0 64px;
+  background-color: #f3f3f3;
+  background-size: 64px 128px;
+}
+
+.flipped {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.reverse {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.correct {
+  opacity: .5;
+  cursor: default;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+/* Icons */
+.correct[data-item="sass"],
+.flipped[data-item="sass"] {
+  background: url("/pairs_game/images/sass.jpg") left center no-repeat #ffffff;
+  background-size: contain;
+}
+
+.correct[data-item="gulp"],
+.flipped[data-item="gulp"] {
+  background: url("/pairs_game/images/gulp.jpg") left center no-repeat #ffffff;
+  background-size: contain;
+}
+
+.correct[data-item="grunt"],
+.flipped[data-item="grunt"] {
+  background: url("/pairs_game/images/grunt.jpg") left center no-repeat #ffffff;
+  background-size: contain;
+}
+
+.correct[data-item="git"],
+.flipped[data-item="git"] {
+  background: url("/pairs_game/images/git.jpg") left center no-repeat #ffffff;
+  background-size: contain;
+}
+
+.correct[data-item="css"],
+.flipped[data-item="css"] {
+  background: url("/pairs_game/images/css.jpg") left center no-repeat #ffffff;
+  background-size: contain;
+}
+/*# sourceMappingURL=style.css.map */
